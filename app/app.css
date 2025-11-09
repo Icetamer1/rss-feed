@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-react';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+
+.header{
+    font-size: 5vw;
+    text-align: center;
+}
+
+.title{
+    font-size: 3vw;
+}
+
+.center{
+    margin-left: 25%;
+}
+
+.test{
+    width: 75%;
+}
+
+.padd{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
