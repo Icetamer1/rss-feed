@@ -15,18 +15,8 @@ interface FeedItem {
 
 setInterval(refresh, 300000);
 
-export function screenSize() {
-  const screenSize = screen.width;
-  if (screenSize > 1050) {
-    return 3;
-  }
-  else if (screenSize <= 1050) {
-    return 2;
-  }
-  else {
-    return 1;
-  }
-}
+
+
 
 export default function FeedList() {
   const [items, setItems] = useState<FeedItem[]>([]);
@@ -43,7 +33,7 @@ export default function FeedList() {
   }
 
   if (now.getMinutes() / 10 < 1) {
-    min = "0" + min;
+    min = `0${now.getMinutes()}`
   }
   else {
     min = `${now.getMinutes()}`;
